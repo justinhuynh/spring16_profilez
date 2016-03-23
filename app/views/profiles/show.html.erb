@@ -1,0 +1,11 @@
+<h2>Profile Show Page!</h2>
+
+<h3><% @profile.one_liner %></h3>
+
+My favorite color is: <%= @profile.favorite_color %>
+
+<h3>About Me</h3>
+
+<%= @profile.about_me %><p>
+
+<%= link_to "Back to Profilez Index", profiles_path %>
