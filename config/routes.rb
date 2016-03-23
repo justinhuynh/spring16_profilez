@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
 
   get '/logout' => 'sessions#destroy'
+  get '/login' => 'sessions#new'
+  get '/signup' => 'users#new'
 end
