@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  before_action :authenticate, only: :show
+  # before_action :authenticate, only: :show
 
   def index
     @profiles = Profile.all
