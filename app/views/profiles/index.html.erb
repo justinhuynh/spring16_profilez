@@ -1,5 +1,5 @@
 <h2>Profilez Index Page!</h2>
 
 <% @profiles.each do |profile| %>
-  <li><%= link_to profile.one_liner, profile_path(profile) %></li>
+  <li><%= profile.user.username %>: <%= link_to profile.one_liner, profile_path(profile) %></li>
 <% end %>
